@@ -28,6 +28,21 @@
 
 ## 🎥 Demo
 
+Below is an example interaction between the **User** and the **Agentic Kubernetes CLI** demonstrating real-time troubleshooting and remediation.
+
+---
+
+**🧑‍💻 User:** list all pods in the cluster  
+**🤖 Agent:** There are no running pods, but one pod `nginx` is showing an issue (`ImagePullBackOff`).
+
+**🧑‍💻 User:** analyze the issue with `nginx` pod  
+**🤖 Agent:** Issue identified — the container image tag `nginx:lt` is incorrect and not found in the registry.
+
+**🧑‍💻 User:** fix the image tag issue and make the pod running  
+**🤖 Agent:** Updated the image tag to `nginx:latest`, redeployed the pod, and verified that it is now **Running** successfully.
+
+---
+
 <video width="640" height="360" controls>
   <source src="https://github.com/user-attachments/assets/c30c4288-793c-4554-98ac-185075a621f0" type="video/mp4">
   Your browser does not support the video tag.
@@ -36,6 +51,7 @@
 [🎥 Watch Full Demo Video](https://github.com/user-attachments/assets/c30c4288-793c-4554-98ac-185075a621f0)
 
 ---
+
 
 ## 📚 Table of Contents
 
@@ -145,7 +161,7 @@ api-server-abc123        1/1     Running   2          3d
 **AI Response:**
 ```
 Analyzing pod app-server...
-Issue: CrashLoopBackOff
+Issue: ImagePullBackOff
 Root Cause: Container exits with code 1
 Last Error: Connection refused to database:5432
 Suggestion: Check database service and credentials
@@ -184,7 +200,7 @@ Suggestion: Check database service and credentials
 
 ### System Components
 
-![Architecture Diagram](https://github.com/user-attachments/assets/be4ca196-7910-454b-bcfb-b5353ec3dd41)
+![Architecture Diagram](https://github.com/user-attachments/assets/4e21ee25-fb6c-4750-8c1f-4d2d410248fc)
 
 ---
 

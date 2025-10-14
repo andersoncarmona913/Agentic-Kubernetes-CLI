@@ -1,4 +1,4 @@
-# 🤖 Agentic Kubernetes CLI
+# Agentic Kubernetes CLI
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-1.34%2B-326CE5.svg)](https://kubernetes.io/)

